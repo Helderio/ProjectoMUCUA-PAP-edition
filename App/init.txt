@@ -1,0 +1,14 @@
+  // Initialize Firebase
+await Firebase.initializeApp(options: const FirebaseOptions(
+      apiKey: 'AIzaSyDCXNCTyU1-B2hR9_uM8udyidEym8XWJ9I',
+      appId: '1:161246127971:android:6ba15e5ee610f515e69556',
+      messagingSenderId: '161246127971',
+      storageBucket: 'stringappdb.appspot.com',
+      projectId: 'stringappdb')
+);
+
+  // Initialize FirebaseStorage
+  final FirebaseStorage storage = FirebaseStorage.instance;
+
+  // Initialize SharedPreferences
+  sharedPreferences = await SharedPreferences.getInstance();
